@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    // Declare variables
+
     int marks[5];
     float totalMarks = 0.0, percentage;
 
@@ -25,7 +25,7 @@ int main() {
   
     percentage = (totalMarks / (5 * 100)) * 100;
 
-    // Display the result
+    
     printf("\nAggregate Marks: %.2f\n", totalMarks);
     printf("Percentage Marks: %.2f\n", percentage);
 
