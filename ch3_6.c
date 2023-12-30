@@ -1,23 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int original, reversed = 0, remainder, temp;
-    printf("Enter a five-digit number: ");
-    scanf("%d", &original);
+    int ramAge, shyamAge, ajayAge;
+    printf("Enter Ram, shyam, Ajay ages : ");
+    scanf("%d", &ramAge);
+    scanf("%d", &shyamAge);
+    scanf("%d", &ajayAge);
 
-    temp = original;
-
-    while (temp != 0) {
-        remainder = temp % 10;
-        reversed = reversed * 10 + remainder;
-        temp /= 10;
-    }
-    printf("Reversed : %d\n", reversed);
-
-    if (original == reversed) {
-        printf("The original and reversed numbers are equal.\n");
+    if (ramAge < shyamAge && ramAge < ajayAge) {
+        printf("Ram is the youngest with age %d.\n", ramAge);
+    } else if (shyamAge < ramAge && shyamAge < ajayAge) {
+        printf("Shyam is the youngest with age %d.\n", shyamAge);
     } else {
-        printf("The original and reversed numbers are not equal.\n");
+        printf("Ajay is the youngest with age %d.\n", ajayAge);
     }
 
     return 0;
