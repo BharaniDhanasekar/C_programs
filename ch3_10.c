@@ -13,7 +13,7 @@ int main() {
     scanf("%lf %lf", &x3, &y3);
 
     if ((y2 - y1) * (x3 - x2) == (y3 - y2) * (x2 - x1)) {
-        printf("The points are collinear (lie on a straight line).\n");
+        printf("The points are collinear.\n");
     } else {
         printf("The points are not collinear.\n");
     }
